@@ -75,7 +75,7 @@ sudo chmod 777 /etc/davfs2/davfs2.conf
 echo >> /etc/davfs2/davfs2.conf
 echo >> /etc/davfs2/davfs2.conf
 
-wget https://raw.hisi.ga/ecoo168/onedrive-davfs-bash/master/get-sharepoint-auth-cookie.py
+wget https://raw.hisi.ga/ecoo168/onedrive-davfs-bash/main/get-sharepoint-auth-cookie.py
 python get-sharepoint-auth-cookie.py ${OD4B} ${USERNAME} ${PASSWORD} > cookie.txt
 sed -i "s/ //g" cookie.txt
 COOKIE=$(cat cookie.txt)
